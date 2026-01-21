@@ -1,0 +1,39 @@
+/*RESET MODERN
+Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/* 1. box-sizing en todo el proyecto */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Quitar márgenes por defecto que traen los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Evitar que las imágenes se salgan de su contenedor */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Heredar tipografías en formularios (inputs, botones) */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Evitar saltos de línea raros en títulos y párrafos */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 6. Mejorar el renderizado del texto */
+body {
+  min-height: 100vh;             /* 📏 Altura total siempre */
+  text-rendering: optimizeSpeed;  /* 🚀 Rendimiento de texto */
+  line-height: 1.5;              /* ✍️ Mejor lectura */
+  -webkit-font-smoothing: antialiased; /* ✨ Letras más nítidas */
+}
